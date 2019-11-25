@@ -11,18 +11,20 @@
         <h2>Kenapa saya membuat website ini.</h2>
         <p>Alasan saya membuat website ini karena ada beberapa orang yang bingung ketika ditanya berat badan ideal mereka dan tidak tahu bagaimana cara menghitungnya serta bagaimana caranya menghitung berapa kalori yang kita makan setiap harinya yang mempengaruhi ke berat badan kita. </p>
         <h2>Sebelum memulai mengukur, kita sebaiknya login terlebih dahulu</h2>
-        <fieldset>
-            <legend>Login untuk melanjutkan kebagian berikutnya</legend>
-            <p>
-                <label for="name">Nama</label>
-                <input id="name" name="nama" type="text">
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="text">
-            </p>
-            <button onclick="buttonForLogin()">Submit</button>
-        </fieldset>
+        <form name="formForLogin" method="POST">
+            <fieldset>
+                <legend>Login untuk melanjutkan kebagian berikutnya</legend>
+                <p>
+                    <label for="name">Nama</label>
+                    <input id="name" name="nama" type="text">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                </p>
+                <input type="button" onclick="buttonForLogin()" value="Submit form">
+            </fieldset>
+        </form>
     </div>
     <div id="bmiOrCalori" style="display: none">
         <h2>Disini anda bisa memilih ingin mengukur BMI atau kalori kalkulator</h2>
