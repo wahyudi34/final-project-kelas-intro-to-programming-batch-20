@@ -15,13 +15,14 @@
     </div>
     <div>
         <h2 id="upperCalori">Disini kalian dapat mencari tau berapa kalori dari makanan yang kalian makan</h2>
-        <form>
+        <form method="POST">
             Silahkan ketik makanan yang ingin anda tau<br>
-            <input id="makananSaya" type="text" name="makanan" value="rawon"> 
+            <input id="makananSaya" type="text" name="makanan"> 
             <p id="showMakanan"></p>
-            <button onclick="buttonForCalori()">Cek hasil</button>
+            <input type="button" onclick="buttonForCalori()" value="Submit form">
         </form>
     </div>
+    <script src="index.js"></script>
 </body>
 <footer>
     <a href="index.html">Login</a><br>

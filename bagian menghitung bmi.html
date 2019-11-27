@@ -14,19 +14,23 @@
     </div>
     <div>
         <h2 id="upperBmi">Disini kalian akan menghitung BMI kalian sendiri</h2>
-        <fieldset>
-            <p>silahkan input berat badan kalian dan tinggi badan kalian<br><br></p>
-            <p>Berat badan<br></p>
-            <input id="beratBadan" type="text" name="berat badan"><br>
-            <p>Tinggi badan<br></p>
-            <input id="tinggiBadan" type="text" name="tinggi badan"><br><br>
-            <button onclick="return buttonForBmi()">Cek hasil</button>
-            <p id="showHasil"></p>
-        </fieldset>
+        <form method="POST">
+            <fieldset>
+                <p>silahkan input berat badan kalian dan tinggi badan kalian<br><br></p>
+                <p>Berat badan<br></p>
+                <input id="beratBadan" type="text" name="berat badan"><br>
+                <p>Tinggi badan<br></p>
+                <input id="tinggiBadan" type="text" name="tinggi badan"><br><br>
+                <input type="button" onclick="buttonForBmi()" value="Submit form">
+                <p id="showHasil"></p>
+                <p id="catatan">*Tinggi badan yang diinput satuannya meter(M)</p>
+            </fieldset>
+        </form>
     </div>
+    <script src="index.js"></script>
 </body>
 <footer>
-    <a href="index.html">Home</a><br>
+    <a href="index.html">Login</a><br>
     Dibuat tahun 2019 oleh Wahyudi
 </footer>
 </html>
